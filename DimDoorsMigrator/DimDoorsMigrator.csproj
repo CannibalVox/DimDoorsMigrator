@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B89E575-7B41-4B66-8B0C-B04338C22D12}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DimDoorsMigrator</RootNamespace>
+    <AssemblyName>DimDoorsMigrator</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="fNbt">
+      <HintPath>..\packages\fNbt.0.6.2.0\lib\net35-Client\fNbt.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="schematics\core\somethingBroke.schematic" />
+    <None Include="schematics\gateways\sandstonePillars.schematic" />
+    <None Include="schematics\gateways\twoPillars.schematic" />
+    <None Include="schematics\nether\ComplexHall_SK-CourtyardAmbush_Open_100.schematic" />
+    <None Include="schematics\nether\ComplexHall_SK-Intersection_Open_100.schematic" />
+    <None Include="schematics\nether\ComplexHall_SK-SoulWastes_Open_100.schematic" />
+    <None Include="schematics\nether\ComplexHall_SK-Starfall_Open_100.schematic" />
+    <None Include="schematics\nether\ComplexHall_SK-TheCauldron_Open_100.schematic" />
+    <None Include="schematics\nether\Maze_SK-BrimstoneMines_Open_80.schematic" />
+    <None Include="schematics\nether\Maze_SK-QuartzfoldCave_Open_40.schematic" />
+    <None Include="schematics\nether\Maze_SK-SwirlsUponSwirls_Open_40.schematic" />
+    <None Include="schematics\nether\Maze_SK-Tangle_Open_80.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-AnvilValley_Open_100.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-Arena_Open_100.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-DarkPathLeft_Open_50.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-DarkPathRight_Open_50.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-DiamondRoom_Open_100.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-LongBridge_Open_100.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-SpiralStairsDown_Open_100.schematic" />
+    <None Include="schematics\nether\SimpleHall_SK-TheFurnace_Open_100.schematic" />
+    <None Include="schematics\ruins\ComplexHall_Balgor0-CrumbledHall_Closed_75.schematic" />
+    <None Include="schematics\ruins\complexHall_buggyTopEntry1_open_100.schematic" />
+    <None Include="schematics\ruins\ComplexHall_Cere-JumpPass_Open_75.schematic" />
+    <None Include="schematics\ruins\ComplexHall_Cere-PuzzleWall_Open_75.schematic" />
+    <None Include="schematics\ruins\ComplexHall_Cere-TransferTunnel_Closed_100.schematic" />
+    <None Include="schematics\ruins\complexHall_exitRuinsWithHiddenDoor_open_100.schematic" />
+    <None Include="schematics\ruins\complexHall_hallwayHiddenTreasure_closed_100.schematic" />
+    <None Include="schematics\ruins\complexHall_largeBrokenHall_closed_100.schematic" />
+    <None Include="schematics\ruins\complexHall_mediumPillarStairs_open_100.schematic" />
+    <None Include="schematics\ruins\complexHall_pitStairs_open_100.schematic" />
+    <None Include="schematics\ruins\complexHall_ruinsO_open_100.schematic" />
+    <None Include="schematics\ruins\ComplexHall_SK-AnchoredDescent_Open_50.schematic" />
+    <None Include="schematics\ruins\ComplexHall_SK-HallwayHiddenTreasure-B_Closed_50.schematic" />
+    <None Include="schematics\ruins\ComplexHall_SK-HiddenStairs_Open_100.schematic" />
+    <None Include="schematics\ruins\ComplexHall_SK-LostGarden_Open_40.schematic" />
+    <None Include="schematics\ruins\ComplexHall_SK-RuinsOhNo_Open_50.schematic" />
+    <None Include="schematics\ruins\complexHall_smallBranchWithExit_closed_100.schematic" />
+    <None Include="schematics\ruins\complexHall_smallRotundaWithExit_closed_100.schematic" />
+    <None Include="schematics\ruins\complexHall_tntPuzzleTrap_closed_50.schematic" />
+    <None Include="schematics\ruins\deadEnd_azersDungeonO_closed_100.schematic" />
+    <None Include="schematics\ruins\DeadEnd_Balgor0-ArrowHall_Closed_75.schematic" />
+    <None Include="schematics\ruins\deadEnd_brokenPillarsO_open_100.schematic" />
+    <None Include="schematics\ruins\DeadEnd_Cere-FloatingAltar_Open_75.schematic" />
+    <None Include="schematics\ruins\deadEnd_diamondTowerTemple1_open_100.schematic" />
+    <None Include="schematics\ruins\deadEnd_fallingTrapO_open_100.schematic" />
+    <None Include="schematics\ruins\deadEnd_hiddenStaircaseO_open_100.schematic" />
+    <None Include="schematics\ruins\deadEnd_lavaTrapO_open_100.schematic" />
+    <None Include="schematics\ruins\deadEnd_randomTree_open_75.schematic" />
+    <None Include="schematics\ruins\DeadEnd_SK-EyesOfTricksters_Open_50.schematic" />
+    <None Include="schematics\ruins\DeadEnd_SK-FarAwayInTheDark_Open_100.schematic" />
+    <None Include="schematics\ruins\DeadEnd_SK-UnstableDesert_Open_50.schematic" />
+    <None Include="schematics\ruins\deadEnd_smallDesert_open_75.schematic" />
+    <None Include="schematics\ruins\deadEnd_smallHiddenTowerO_open_100.schematic" />
+    <None Include="schematics\ruins\deadEnd_smallPond_open_75.schematic" />
+    <None Include="schematics\ruins\deadEnd_smallSilverfishRoom_closed_100.schematic" />
+    <None Include="schematics\ruins\deadEnd_tntTrapO_open_100.schematic" />
+    <None Include="schematics\ruins\exit_exitCube_open_100.schematic" />
+    <None Include="schematics\ruins\exit_lockingExitHall_closed_100.schematic" />
+    <None Include="schematics\ruins\Exit_SK-HotSuspense_Open_75.schematic" />
+    <None Include="schematics\ruins\Exit_SK-LockingExitTrap_Closed_50.schematic" />
+    <None Include="schematics\ruins\exit_smallExitPrison_open_100.schematic" />
+    <None Include="schematics\ruins\Exit_XombyCraft-RopeBridge_Open_100.schematic" />
+    <None Include="schematics\ruins\hub_4WayBasicHall_closed_200.schematic" />
+    <None Include="schematics\ruins\hub_4WayHallExit_closed_200.schematic" />
+    <None Include="schematics\ruins\Hub_Balgor0-OmniMaze_Open_50.schematic" />
+    <None Include="schematics\ruins\Hub_Cere-GreatHall_Open_40.schematic" />
+    <None Include="schematics\ruins\hub_doorTotemRuins_open_100.schematic" />
+    <None Include="schematics\ruins\hub_fortRuins_open_100.schematic" />
+    <None Include="schematics\ruins\hub_hallwayTrapRooms1_closed_100.schematic" />
+    <None Include="schematics\ruins\hub_longDoorHallway_closed_100.schematic" />
+    <None Include="schematics\ruins\Hub_SK-Claustrophobia_Open_40.schematic" />
+    <None Include="schematics\ruins\Hub_SK-FractalCage_Open_40.schematic" />
+    <None Include="schematics\ruins\Hub_SK-HeartOfDisorder_Open_50.schematic" />
+    <None Include="schematics\ruins\Hub_SK-RandomSnow_Open_75.schematic" />
+    <None Include="schematics\ruins\Hub_SK-RandomSwamp_Open_75.schematic" />
+    <None Include="schematics\ruins\Hub_SK-TheNexus_Open_40.schematic" />
+    <None Include="schematics\ruins\hub_smallMultilevelMaze_closed_100.schematic" />
+    <None Include="schematics\ruins\maze_smallMaze1_closed_100.schematic" />
+    <None Include="schematics\ruins\simpleHall_collapsedSingleTunnel1_closed_100.schematic" />
+    <None Include="schematics\ruins\simpleHall_simpleDropHall_closed_100.schematic" />
+    <None Include="schematics\ruins\simpleHall_simpleSmallT1_closed_100.schematic" />
+    <None Include="schematics\ruins\simpleHall_simpleStairsDown_closed_100.schematic" />
+    <None Include="schematics\ruins\simpleHall_simpleStairsUp_closed_100.schematic" />
+    <None Include="schematics\ruins\simpleHall_singleStraightHall1_closed_100.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-LeftDownStairs_Open_50.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-LeftUpPath_Open_50.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-RightDownStairs_Open_50.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-RightUpPath_Open_50.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-SpiralHallway_Open_100.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-UTurnLeft_Open_50.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-UTurnRight_Open_50.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-WatchedForkLeft_Closed_80.schematic" />
+    <None Include="schematics\ruins\SimpleHall_SK-WatchedForkRight_Closed_80.schematic" />
+    <None Include="schematics\ruins\simpleHall_smallSimpleLeft_closed_100.schematic" />
+    <None Include="schematics\ruins\simpleHall_smallSimpleRight_closed_100.schematic" />
+    <None Include="schematics\ruins\trap_fakeTNTTrap_closed_100.schematic" />
+    <None Include="schematics\ruins\trap_hallwayPitFallTrap_closed_200.schematic" />
+    <None Include="schematics\ruins\trap_lavaPyramid_open_100.schematic" />
+    <None Include="schematics\ruins\trap_pistonFallRuins_open_75.schematic" />
+    <None Include="schematics\ruins\trap_pistonFloorHall_closed_150.schematic" />
+    <None Include="schematics\ruins\trap_pistonFloorPlatform2_closed_100.schematic" />
+    <None Include="schematics\ruins\trap_pistonFloorPlatform_closed_100.schematic" />
+    <None Include="schematics\ruins\trap_pistonHallway_closed_100.schematic" />
+    <None Include="schematics\ruins\trap_pistonSmasherHall_closed_100.schematic" />
+    <None Include="schematics\ruins\trap_raceTheTNTHall_closed_1.schematic" />
+    <None Include="schematics\ruins\Trap_SK-FakeTNTTrap-B_Closed_50.schematic" />
+    <None Include="schematics\ruins\Trap_SK-NicolesTower_Open_50.schematic" />
+    <None Include="schematics\ruins\Trap_SK-RaceTheLight_Closed_50.schematic" />
+    <None Include="schematics\ruins\Trap_SK-RestlessCorridor_Open_40.schematic" />
+    <None Include="schematics\ruins\Trap_SK-SimpleLeftTrap_Closed_50.schematic" />
+    <None Include="schematics\ruins\Trap_SK-SimpleRightTrap_Closed_50.schematic" />
+    <None Include="schematics\ruins\Trap_SK-TrappedStairsDown_Closed_50.schematic" />
+    <None Include="schematics\ruins\Trap_SK-TrappedStairsUp_Closed_50.schematic" />
+    <None Include="schematics\ruins\Trap_SK-UTrapRight_Open_50.schematic" />
+    <None Include="schematics\ruins\trap_wallFallcomboPistonHall_closed_200.schematic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="blockMapping.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="schematics\How_to_add_dungeons.txt" />
+    <Content Include="schematics\nether.txt" />
+    <Content Include="schematics\nether\rules.txt" />
+    <Content Include="schematics\ruins.txt" />
+    <Content Include="schematics\ruins\rules.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
